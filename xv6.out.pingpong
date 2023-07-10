@@ -5,10 +5,10 @@ hart 1 starting
 hart 2 starting
 init: starting sh
 $ pingpong
-56::    rreecceieviedv epdin gpi
-ng
-4: r3e:ce ivreedc epoinvge
-d pong
-$ echo OK
+56::   re creievcede ipivnge
+d ping
+3: received pong4
+: $ recho OK
+eceived pong
 OK
-$ qemu-system-riscv64: terminating on signal 15 from pid 9150 (make)
+$ qemu-system-riscv64: terminating on signal 15 from pid 10539 (make)
