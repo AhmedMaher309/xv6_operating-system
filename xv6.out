@@ -6,5 +6,7 @@ hart 2 starting
 init: starting sh
 $ sh < xargstest.sh
 $ echo DONE
-$ $ $ $ $ exec xargs failed
-$ $ DONEqemu-system-riscv64: terminating on signal 15 from pid 32259 (make)
+$ $ $ $ $ hello
+hello
+hello
+$ $ DONEqemu-system-riscv64: terminating on signal 15 from pid 13523 (make)
