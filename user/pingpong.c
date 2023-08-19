@@ -42,4 +42,6 @@ main(int argc, char *argv[])
 		printf("%d: received pong\n", getpid() );;
 	}
   exit(0);
+
+  // NOTE: not closing the pipe ends doesn't cause any problems. However, it is a good parctice
 }
