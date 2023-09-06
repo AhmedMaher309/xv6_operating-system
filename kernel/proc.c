@@ -689,6 +689,7 @@ procdump(void)
 int 
 freeprocesses(void)
 {
+  // loop on the processes list and see which processes are unused
   int procnum = 0;
   for (struct proc *p = proc; p < &proc[NPROC]; p++) {
     if (p->state != UNUSED)
