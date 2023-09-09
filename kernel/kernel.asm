@@ -3775,6 +3775,7 @@ freeprocesses(void)
     80001b0c:	1141                	addi	sp,sp,-16
     80001b0e:	e422                	sd	s0,8(sp)
     80001b10:	0800                	addi	s0,sp,16
+  // loop on the processes list and see which processes are unused
   int procnum = 0;
   for (struct proc *p = proc; p < &proc[NPROC]; p++) {
     80001b12:	00007797          	auipc	a5,0x7
@@ -4968,9 +4969,9 @@ sys_sysinfo(void)
     80002390:	84aa                	mv	s1,a0
 
   // user pointer to struct sysinfo
-  uint64 source;
+  uint64 dstva;
 
-  argaddr(0, &source);
+  argaddr(0, &dstva);
     80002392:	fd840593          	addi	a1,s0,-40
     80002396:	4501                	li	a0,0
     80002398:	00000097          	auipc	ra,0x0
@@ -4992,7 +4993,7 @@ sys_sysinfo(void)
   sysinfo.nproc = procnum;
     800023b6:	fd243823          	sd	s2,-48(s0)
 
-  if (copyout(p->pagetable, source, (char *)&sysinfo, sizeof(sysinfo)) < 0)
+  if (copyout(p->pagetable, dstva, (char *)&sysinfo, sizeof(sysinfo)) < 0)
     800023ba:	46c1                	li	a3,16
     800023bc:	fc840613          	addi	a2,s0,-56
     800023c0:	fd843583          	ld	a1,-40(s0)

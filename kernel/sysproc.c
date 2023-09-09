@@ -111,9 +111,9 @@ sys_sysinfo(void)
   struct proc *p = myproc();
 
   // user pointer to struct sysinfo
-  uint64 source;
+  uint64 dstva;
 
-  argaddr(0, &source);
+  argaddr(0, &dstva);
   int procnum;
   int freemem;
 
@@ -124,7 +124,7 @@ sys_sysinfo(void)
   sysinfo.freemem = freemem;
   sysinfo.nproc = procnum;
 
-  if (copyout(p->pagetable, source, (char *)&sysinfo, sizeof(sysinfo)) < 0)
+  if (copyout(p->pagetable, dstva, (char *)&sysinfo, sizeof(sysinfo)) < 0)
     return -1;
 
   return 0;
