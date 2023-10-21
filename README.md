@@ -3,7 +3,7 @@
 
 ## Labs
 
-Lab: Xv6 and Unix utilities : [Requirement](https://pdos.csail.mit.edu/6.S081/2022/labs/util.html) [utils](https://github.com/AhmedMaher309/xv6_operating-system/tree/utils)
+Lab: Xv6 and Unix utilities : [Requirement](https://pdos.csail.mit.edu/6.S081/2022/labs/util.html) [utility functions](https://github.com/AhmedMaher309/xv6_operating-system/tree/utils)
 
 Lab: system calls ：[Requirement](https://pdos.csail.mit.edu/6.S081/2022/labs/syscall.html) [system calls](https://github.com/AhmedMaher309/xv6_operating-system/tree/system-calls)
 
