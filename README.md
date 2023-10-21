@@ -3,11 +3,11 @@
 
 ## Labs 代码和解析
 
-Lab: Xv6 and Unix utilities : [Requirement](https://pdos.csail.mit.edu/6.S081/2022/labs/util.html) [代码分支](https://github.com/relaxcn/xv6-labs-2022-solutions/tree/util)
+Lab: Xv6 and Unix utilities : [Requirement](https://pdos.csail.mit.edu/6.S081/2022/labs/util.html) [utils](https://github.com/AhmedMaher309/xv6_operating-system/tree/utils)
 
-Lab: system calls ：[解析](./doc/syscall.md) [代码分支](https://github.com/relaxcn/xv6-labs-2022-solutions/tree/syscall)
+Lab: system calls ：[Requirement](https://pdos.csail.mit.edu/6.S081/2022/labs/syscall.html) [system calls](https://github.com/AhmedMaher309/xv6_operating-system/tree/system-calls)
 
-Lab: Page tables： [解析](./doc/pagetable.md) [代码分支](https://github.com/relaxcn/xv6-labs-2022-solutions/tree/pgtbl)
+Lab: Page tables： [Requirement](https://pdos.csail.mit.edu/6.S081/2022/labs/pgtbl.html) [page tables improvements](https://github.com/AhmedMaher309/xv6_operating-system/tree/pgtbl)
 
 
 xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
