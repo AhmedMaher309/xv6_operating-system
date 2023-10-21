@@ -1,7 +1,6 @@
-# My implementations for the xv6 operating system
-### Each branch has one of the task s(utilities, systemcalls, pagetables,..)
+# My contributions for the xv6 operating system
 
-## Labs
+## Tasks
 
 Lab: Xv6 and Unix utilities : [Requirement](https://pdos.csail.mit.edu/6.S081/2022/labs/util.html) [utility functions](https://github.com/AhmedMaher309/xv6_operating-system/tree/utils)
 
