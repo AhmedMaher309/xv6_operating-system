@@ -296,9 +296,6 @@ fork(void)
   }
   np->sz = p->sz;
 
-  // copy trace mask value
-  np->mask = p->mask;
-  
   // copy saved user registers.
   *(np->trapframe) = *(p->trapframe);
 
@@ -683,17 +680,4 @@ procdump(void)
     printf("%d %s %s", p->pid, state, p->name);
     printf("\n");
   }
-}
-
-// return the number of unused processes
-int 
-freeprocesses(void)
-{
-  // loop on the processes list and see which processes are unused
-  int procnum = 0;
-  for (struct proc *p = proc; p < &proc[NPROC]; p++) {
-    if (p->state != UNUSED)
-      procnum++;
-  }
-  return procnum;
 }

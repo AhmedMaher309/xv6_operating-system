@@ -80,21 +80,3 @@ kalloc(void)
     memset((char*)r, 5, PGSIZE); // fill with junk
   return (void*)r;
 }
-
-// return the amount of free memory allocated (freemem)
-int 
-freememsize()
-{
-  // loop on the memory free list and increment each time
-  // by PGSIZE(4069) to get the amount of free memory
-  struct run *freeptr;
-  uint64 freemem = 0;
-  acquire(&kmem.lock);
-  freeptr = kmem.freelist;
-  while (freeptr) {
-    freemem += PGSIZE;
-    freeptr = freeptr->next;
-  }
-  release(&kmem.lock);
-  return freemem;
-}
